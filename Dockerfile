@@ -11,7 +11,7 @@ RUN set -ex \
         compass \
     && apk del build-dependencies
 
-RUN apk add --update curl bash
+RUN apk add --update curl bash git
 
 # Install jfrog client
 RUN curl -fL https://getcli.jfrog.io | sh && \
